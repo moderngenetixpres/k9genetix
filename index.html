@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>K9 Genetix — Longevity Supplements for Dogs | A Modern Genetix Company</title>
+<meta name="description" content="K9 Genetix builds premium dog supplements for longer strong years — joint mobility, coat vitality, and calm focus. Science-forward wellness from Modern Genetix."/>
+<link rel="icon" href="logo-mark.svg" type="image/svg+xml"/>
+<style>
+:root{
+  --bg:#050608;--bg2:#0b0d10;--bg3:#12151a;--bg4:#161a20;
+  --teal:#19c6e6;--teal-dim:rgba(25,198,230,.14);--teal-glow:rgba(25,198,230,.22);
+  --silver:#c5cdd4;--muted:#8b949e;--white:#f4f7f9;
+  --line:rgba(197,205,212,.12);--line-strong:rgba(197,205,212,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--silver);line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.eyebrow{
+  display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--teal);font-weight:600;margin-bottom:14px;
+}
+h1,h2,h3{color:var(--white);font-weight:600;letter-spacing:-.02em}
+h1{font-size:clamp(1.85rem,4.2vw,3.1rem);line-height:1.08;max-width:18ch}
+h2{font-size:clamp(1.55rem,3vw,2.3rem);line-height:1.15;margin-bottom:16px}
+h3{font-size:1.08rem;margin-bottom:8px}
+p{color:var(--silver);max-width:58ch}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 22px;border-radius:999px;font-weight:600;font-size:14px;
+  border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--teal);color:#031018}
+.btn-primary:hover{background:#3ad4ef}
+.btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--white)}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+.btn-sm{padding:10px 16px;font-size:13px}
+
+/* NAV */
+.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  background:rgba(5,6,8,.86);border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:34px;height:34px;border-radius:8px}
+.logo{
+  font-weight:700;letter-spacing:.1em;font-size:13px;color:var(--white);text-transform:uppercase;
+}
+.logo span{color:var(--teal)}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--white)}
+.nav-toggle{
+  display:none;background:transparent;border:1px solid var(--line);color:var(--white);
+  border-radius:8px;padding:8px 10px;cursor:pointer;font-size:13px;
+}
+
+/* HERO */
+.hero{
+  padding:72px 0 64px;
+  background:
+    radial-gradient(850px 400px at 88% 8%,rgba(25,198,230,.13),transparent 58%),
+    radial-gradient(600px 320px at 8% 90%,rgba(25,198,230,.05),transparent 55%),
+    var(--bg);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-copy p{margin:18px 0 28px;font-size:1.08rem;line-height:1.6}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.parent-line{
+  margin-top:22px;font-size:12px;color:var(--muted);letter-spacing:.04em;
+}
+.parent-line strong{color:var(--silver);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{
+  font-size:11px;color:var(--silver);border:1px solid var(--line);background:var(--bg3);
+  border-radius:999px;padding:6px 12px;letter-spacing:.04em;
+}
+.hero-visual{
+  position:relative;background:linear-gradient(165deg,#10141a 0%,#090b0e 100%);
+  border:1px solid var(--line);border-radius:24px;padding:0;
+  box-shadow:0 36px 90px rgba(0,0,0,.5);overflow:hidden;min-height:360px;
+}
+.hero-photo{
+  width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;
+  display:block;background:#050608;
+}
+.hero-caption{
+  position:absolute;left:0;right:0;bottom:0;padding:48px 20px 18px;
+  background:linear-gradient(transparent,rgba(5,6,8,.92) 55%);
+}
+.hero-caption h3{font-size:1.2rem;margin:0 0 4px}
+.hero-caption .lede{margin:0;font-size:13px;color:var(--muted);max-width:none}
+.hero-caption .tagline{display:inline-block;margin-top:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600}
+
+/* SECTIONS */
+section{padding:76px 0;border-top:1px solid var(--line)}
+.section-soft{background:var(--bg2)}
+.section-head{margin-bottom:36px}
+.section-head p{margin-top:6px}
+
+/* PRODUCTS */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{
+  background:var(--bg3);border:1px solid var(--line);border-radius:20px;padding:22px;
+  display:flex;flex-direction:column;min-height:100%;
+  transition:border-color .2s ease,transform .2s ease;
+}
+.product:hover{border-color:rgba(25,198,230,.4);transform:translateY(-3px)}
+.product-icon{
+  width:48px;height:48px;border-radius:14px;margin-bottom:18px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--teal-dim);border:1px solid rgba(25,198,230,.28);color:var(--teal);
+}
+.product-icon svg{width:24px;height:24px}
+.product .tag{
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);
+  font-weight:600;margin-bottom:8px;
+}
+.product p{font-size:14px;color:var(--muted);max-width:none;flex:1}
+.product-meta{
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;
+}
+.product-meta .price{color:var(--white);font-weight:700;font-size:1.05rem}
+.product-meta .note{color:var(--muted);font-size:12px}
+
+/* SCIENCE */
+.science-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.science-points{display:grid;gap:14px;margin-top:8px}
+.point{
+  display:flex;gap:14px;padding:16px 18px;border-radius:14px;
+  background:var(--bg3);border:1px solid var(--line);
+}
+.point-num{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--teal-dim);color:var(--teal);font-size:12px;font-weight:700;
+}
+.point h3{font-size:.98rem;margin-bottom:4px}
+.point p{font-size:13.5px;color:var(--muted);max-width:none}
+.science-panel{
+  background:linear-gradient(160deg,#0e1418,#090b0e);
+  border:1px solid rgba(25,198,230,.28);border-radius:22px;padding:28px;
+}
+.science-panel .eyebrow{margin-bottom:10px}
+.science-panel h3{font-size:1.25rem;margin-bottom:12px}
+.science-panel p{font-size:14.5px;max-width:none}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.pillar{
+  background:rgba(5,6,8,.55);border:1px solid var(--line);border-radius:12px;padding:14px;
+}
+.pillar b{display:block;color:var(--white);font-size:13px;margin-bottom:4px}
+.pillar span{font-size:12px;color:var(--muted)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.about-copy p + p{margin-top:14px}
+.parallel{
+  background:var(--bg3);border:1px solid var(--line);border-radius:22px;padding:26px;
+}
+.parallel-row{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;
+}
+.parallel-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px;
+}
+.parallel-card .who{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:8px}
+.parallel-card p{font-size:13.5px;color:var(--muted);max-width:none}
+.founder{
+  display:flex;gap:16px;align-items:center;margin-top:24px;padding:18px;
+  border-radius:16px;border:1px solid var(--line);background:var(--bg4);
+}
+.avatar{
+  width:56px;height:56px;border-radius:50%;flex-shrink:0;
+  background:radial-gradient(circle at 30% 30%,var(--teal),#0a3a45 55%,#111);
+  border:2px solid rgba(25,198,230,.4);
+}
+.founder strong{display:block;color:var(--white);font-size:14px}
+.founder span{font-size:12px;color:var(--muted)}
+
+/* CONTACT */
+.contact-box{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
+  background:linear-gradient(135deg,#0e1418,#0a0c10);
+  border:1px solid var(--line);border-radius:22px;padding:32px;
+}
+.contact-box p{margin-top:10px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.contact-side{
+  background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:20px;
+}
+.contact-side div{margin-bottom:14px}
+.contact-side div:last-child{margin-bottom:0}
+.contact-side .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.contact-side .val{color:var(--white);font-size:14px;font-weight:500}
+
+/* FOOTER */
+footer{padding:40px 0 56px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:flex-start}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer-brand img{width:28px;height:28px;border-radius:7px}
+.footer-brand .logo{font-size:12px}
+footer p{max-width:52ch;margin-bottom:8px}
+.domains{color:var(--silver)}
+.domains a:hover{color:var(--teal)}
+
+@media(max-width:900px){
+  .nav-links{display:none}
+  .nav-links.open{
+    display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;
+    background:rgba(5,6,8,.96);border-bottom:1px solid var(--line);padding:16px 4vw 20px;gap:14px;
+  }
+  .nav-toggle{display:inline-flex}
+  .nav-inner{position:relative}
+  .hero-grid,.science-grid,.about-grid,.contact-box,.product-grid{grid-template-columns:1fr}
+  .product-grid{gap:14px}
+  .parallel-row{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:1fr 1fr 1fr}
+  h1{max-width:none}
+}
+@media(max-width:560px){
+  .hero{padding:48px 0 40px}
+  section{padding:56px 0}
+  .pillars{grid-template-columns:1fr}
+  .stat-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="K9 Genetix home">
+      <img src="logo-mark.svg" alt=""/>
+      <span class="logo">K9 <span>GENETIX</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#shop">Shop</a>
+      <a href="#science">Science</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu">Menu</button>
+    <a class="btn btn-primary btn-sm" href="#shop">Shop formulas</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Canine longevity · by Modern Genetix</div>
+        <h1>Premium products for working, hunting, and amazing family dogs.</h1>
+        <p>K9 Genetix builds premium wellness formulas for dogs in their prime and past it — mobility, coat, and calm focus — so the walk stays a run as long as biology allows. Science-forward. No pity branding. No pet-shop sugar coating.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Explore the line</a>
+          <a class="btn btn-ghost" href="#science">Read the science</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Premium actives</span>
+          <span class="chip">Daily wellness</span>
+          <span class="chip">Midlife → senior</span>
+          <span class="chip">GMP manufactured</span>
+        </div>
+        <p class="parent-line">A <strong>Modern Genetix</strong> company · Sister to Midlife Resurgence</p>
+      </div>
+      <aside class="hero-visual" aria-label="Dizzy, Belgian Malinois — K9 Genetix">
+        <img class="hero-photo" src="dizzy-helix-hero.png" alt="Dizzy, a female Belgian Malinois wearing a collar with a DNA helix mark"/>
+        <div class="hero-caption">
+          <h3>Dizzy</h3>
+          <p class="lede">Belgian Malinois · face of K9 Genetix</p>
+          <span class="tagline">Helix on the collar · still wants to run</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SHOP / PRODUCTS -->
+  <section id="shop" class="section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The line</div>
+        <h2>Three formulas. One goal: keep the engine honest.</h2>
+        <p>Placeholder product cards for the launch mock — names and framing match the Modern Genetix naming style. Pricing and labels TBD.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M4 10c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M8 6v12M16 6v12"/></svg>
+          </div>
+          <div class="tag">Mobility</div>
+          <h3>Joint Forge</h3>
+          <p>Daily joint &amp; connective-tissue support for dogs who still chase the ball harder than their age suggests. Built around glucosamine, chondroitin, MSM, and omega support — for comfortable movement, not miracle cures.</p>
+          <div class="product-meta">
+            <span class="price">$44.99</span>
+            <span class="note">60 soft chews · draft</span>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c2.5 3 4 6 4 9a4 4 0 11-8 0c0-3 1.5-6 4-9z"/><path d="M9 20h6"/></svg>
+          </div>
+          <div class="tag">Skin &amp; coat</div>
+          <h3>Vital Coat</h3>
+          <p>Omega-forward coat and skin nutrition for the dog whose coat should still look like they live outdoors on purpose. Fish oil, biotin, and zinc — shine and barrier support as daily maintenance.</p>
+          <div class="product-meta">
+            <span class="price">$39.99</span>
+            <span class="note">90 soft chews · draft</span>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 1.5"/></svg>
+          </div>
+          <div class="tag">Calm &amp; focus</div>
+          <h3>Calm Focus</h3>
+          <p>Behavioral calm and cognitive steadiness for high-drive dogs and aging minds alike. L-theanine, magnesium, and select botanicals — support for a settled nervous system, not sedation theater.</p>
+          <div class="product-meta">
+            <span class="price">$42.99</span>
+            <span class="note">60 soft chews · draft</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENCE -->
+  <section id="science">
+    <div class="wrap science-grid">
+      <div>
+        <div class="eyebrow">Science strip</div>
+        <h2>Longevity is a system — not a slogan on a bag of treats.</h2>
+        <p>Dogs age in public. Stiffness shows up on stairs. Coat dulls. Focus frays on the walk. We don’t pretend a chew reverses aging. We design daily inputs that support the systems owners actually notice.</p>
+        <div class="science-points">
+          <div class="point">
+            <div class="point-num">01</div>
+            <div>
+              <h3>Joints under load</h3>
+              <p>Cartilage, synovial fluid, and connective tissue take the miles. Support compounds are framed as maintenance for active and aging dogs — not disease treatment.</p>
+            </div>
+          </div>
+          <div class="point">
+            <div class="point-num">02</div>
+            <div>
+              <h3>Skin as armor</h3>
+              <p>Lipids and micronutrients feed barrier integrity and coat quality — the outside signal of inside nutrition, especially when diets run lean.</p>
+            </div>
+          </div>
+          <div class="point">
+            <div class="point-num">03</div>
+            <div>
+              <h3>Nervous-system tone</h3>
+              <p>Calm Focus targets everyday stress load and age-related cognitive fog with wellness-level actives — so training and downtime stay usable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="science-panel">
+        <div class="eyebrow">House standard</div>
+        <h3>Same bar as Modern Genetix human formulas.</h3>
+        <p>Transparent actives. No proprietary fog. Language that stays inside general wellness — we support how dogs move, look, and settle; we do not claim to cure, treat, or prevent disease.</p>
+        <div class="pillars">
+          <div class="pillar"><b>Clean naming</b><span>Forge / Vital / Focus — MG style</span></div>
+          <div class="pillar"><b>Daily dose</b><span>Built for consistency, not spikes</span></div>
+          <div class="pillar"><b>Owner parallel</b><span>Midlife human ↔ aging dog</span></div>
+          <div class="pillar"><b>Honest claims</b><span>Wellness support only</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-soft">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="eyebrow">About</div>
+        <h2>You refused to age on autopilot. Your dog didn’t ask to either.</h2>
+        <p>Modern Genetix started with a simple refusal: midlife is not a permission slip to quit. Midlife Resurgence and Mimic the Young carried that idea for humans — training, recovery, and biology that still wants to perform.</p>
+        <p>K9 Genetix is the same idea on four legs. The dog who still bolts at the door deserves longer strong years, not a soft-focus “senior” aisle that treats decline like destiny. We build supplements for owners who train, hike, and refuse to write off the second half of a dog’s life.</p>
+        <div class="founder">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Michael Gill</strong>
+            <span>Founder · Modern Genetix / K9 Genetix</span>
+          </div>
+        </div>
+      </div>
+      <aside class="parallel">
+        <div class="eyebrow">The parallel</div>
+        <h3 style="margin-bottom:6px">Mimic the Young — for both of you.</h3>
+        <p style="font-size:14px;color:var(--muted);max-width:none">Human longevity protocols and canine wellness share a premise: protect capacity early, stack the boring daily inputs, keep the engine available.</p>
+        <div class="parallel-row">
+          <div class="parallel-card">
+            <div class="who">The owner</div>
+            <p>Still training. Still chasing output. Modern Genetix human line for midlife resilience.</p>
+          </div>
+          <div class="parallel-card">
+            <div class="who">The dog</div>
+            <p>Still running. Still claiming the yard. K9 Genetix for joints, coat, and calm focus.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Partnerships, wholesale, and launch updates.</h2>
+          <p>This page is a brand mock for review. For product questions, vet partnerships, or retail interest, reach the Modern Genetix team — we’ll route K9 Genetix from the same desk.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@moderngenetics.com">Email the team</a>
+            <a class="btn btn-ghost" href="#shop">Back to formulas</a>
+          </div>
+        </div>
+        <div class="contact-side">
+          <div>
+            <div class="lbl">Brand</div>
+            <div class="val">K9 Genetix</div>
+          </div>
+          <div>
+            <div class="lbl">Parent</div>
+            <div class="val">Modern Genetix Inc.</div>
+          </div>
+          <div>
+            <div class="lbl">Primary domain</div>
+            <div class="val">k9genetix.com</div>
+          </div>
+          <div>
+            <div class="lbl">Status</div>
+            <div class="val">Homepage mock · draft copy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="logo-mark.svg" alt=""/>
+        <span class="logo">K9 <span>GENETIX</span></span>
+      </div>
+      <p class="domains"><a href="https://k9genetix.com">k9genetix.com</a> · <a href="https://caninegenetix.com">caninegenetix.com</a> redirects here</p>
+      <p>© Modern Genetix Inc. All rights reserved. A Modern Genetix company.</p>
+    </div>
+    <div>
+      <p>General wellness products for dogs. Not intended to diagnose, treat, cure, or prevent any disease. Consult your veterinarian before starting any supplement.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('navToggle');
+  var links=document.getElementById('navLinks');
+  if(!btn||!links)return;
+  btn.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    btn.textContent=open?'Close':'Menu';
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      links.classList.remove('open');
+      btn.textContent='Menu';
+      btn.setAttribute('aria-label','Open menu');
+    });
+  });
+})();
+</script>
+</body>
+</html>
