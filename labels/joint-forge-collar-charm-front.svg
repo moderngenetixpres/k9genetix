@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1280" width="900" height="1280" role="img" aria-label="K9 Genetix Joint Forge — Collar Charm label">
+
+  <defs>
+    <linearGradient id="silverRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7fafc"/>
+      <stop offset="14%" stop-color="#d5dde4"/>
+      <stop offset="32%" stop-color="#9aa6b0"/>
+      <stop offset="48%" stop-color="#eef2f5"/>
+      <stop offset="62%" stop-color="#c5cdd4"/>
+      <stop offset="82%" stop-color="#8b969f"/>
+      <stop offset="100%" stop-color="#dfe6eb"/>
+    </linearGradient>
+    <linearGradient id="silverRimInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8eef2" stop-opacity=".5"/>
+      <stop offset="50%" stop-color="#c5cdd4" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#7f8b95" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="bailMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#c5cdd4"/>
+      <stop offset="100%" stop-color="#7a868f"/>
+    </linearGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="26%" r="68%">
+      <stop offset="0%" stop-color="#10161b"/>
+      <stop offset="48%" stop-color="#07090c"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+    <linearGradient id="tealGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5ad8f0"/>
+      <stop offset="45%" stop-color="#19c6e6"/>
+      <stop offset="100%" stop-color="#0c8eab"/>
+    </linearGradient>
+    <filter id="softShadow" x="-25%" y="-15%" width="150%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#000" flood-opacity=".6"/>
+    </filter>
+    <filter id="charmGlow" x="-55%" y="-35%" width="210%" height="170%">
+      <feGaussianBlur stdDeviation="2.8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style type="text/css"><![CDATA[
+      .brand { font-family: Inter, Geist, Outfit, Montserrat, system-ui, sans-serif; }
+      .display { font-family: Outfit, Inter, Geist, Montserrat, system-ui, sans-serif; }
+    ]]></style>
+  </defs>
+
+  <rect width="900" height="1280" fill="none"/>
+
+  <g filter="url(#softShadow)">
+    <circle cx="450" cy="76" r="36" fill="none" stroke="url(#bailMetal)" stroke-width="12"/>
+    <circle cx="450" cy="76" r="36" fill="none" stroke="#050608" stroke-width="5.5"/>
+    <circle cx="450" cy="76" r="23" fill="#050608"/>
+    <path d="M426 55c10-12 32-16 48-6" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2.6" stroke-linecap="round"/>
+    <rect x="108" y="96" width="684" height="1086" rx="96" ry="96" fill="url(#silverRim)"/>
+    <rect x="128" y="116" width="644" height="1046" rx="80" ry="80" fill="url(#faceGlow)"/>
+    <rect x="139" y="127" width="622" height="1024" rx="72" ry="72" fill="none" stroke="url(#silverRimInner)" stroke-width="1.5"/>
+    <path d="M250 127h400" stroke="#19c6e6" stroke-opacity=".28" stroke-width="1.2"/>
+  </g>
+
+  <!-- FIRST design: circular teal DNA helix + small paw (no bone silhouette, no bone badge) -->
+  <g transform="translate(450,268) scale(1.28)" filter="url(#charmGlow)">
+    <ellipse cx="0" cy="0" rx="48" ry="102.0" fill="#19c6e6" opacity=".07"/><ellipse cx="0" cy="0" rx="34" ry="88.0" fill="#19c6e6" opacity=".05"/>
+    <path d="M0.00 -92.00 L1.87 -89.44 L3.92 -86.89 L6.05 -84.33 L8.18 -81.78 L10.24 -79.22 L12.19 -76.67 L13.97 -74.11 L15.53 -71.56 L16.83 -69.00 L17.83 -66.44 L18.51 -63.89 L18.84 -61.33 L18.80 -58.78 L18.39 -56.22 L17.61 -53.67 L16.47 -51.11 L14.98 -48.56 L13.17 -46.00 L11.07 -43.44 L8.73 -40.89 L6.17 -38.33 L3.46 -35.78 L0.64 -33.22 L-2.22 -30.67 L-5.08 -28.11 L-7.87 -25.56 L-10.54 -23.00 L-13.04 -20.44 L-15.31 -17.89 L-17.31 -15.33 L-18.99 -12.78 L-20.32 -10.22 L-21.28 -7.67 L-21.84 -5.11 L-21.99 -2.56 L-21.73 0.00 L-21.06 2.56 L-20.00 5.11 L-18.57 7.67 L-16.79 10.22 L-14.70 12.78 L-12.36 15.33 L-9.79 17.89 L-7.05 20.44 L-4.21 23.00 L-1.31 25.56 L1.58 28.11 L4.42 30.67 L7.14 33.22 L9.68 35.78 L12.01 38.33 L14.08 40.89 L15.85 43.44 L17.29 46.00 L18.38 48.56 L19.09 51.11 L19.43 53.67 L19.39 56.22 L18.98 58.78 L18.22 61.33 L17.13 63.89 L15.74 66.44 L14.09 69.00 L12.22 71.56 L10.18 74.11 L8.02 76.67 L5.80 79.22 L3.57 81.78 L1.40 84.33 L-0.64 86.89 L-2.47 89.44 L-3.74 92.00" fill="none" stroke="url(#tealGlow)" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0.00 -92.00 L-1.87 -89.44 L-3.92 -86.89 L-6.05 -84.33 L-8.18 -81.78 L-10.24 -79.22 L-12.19 -76.67 L-13.97 -74.11 L-15.53 -71.56 L-16.83 -69.00 L-17.83 -66.44 L-18.51 -63.89 L-18.84 -61.33 L-18.80 -58.78 L-18.39 -56.22 L-17.61 -53.67 L-16.47 -51.11 L-14.98 -48.56 L-13.17 -46.00 L-11.07 -43.44 L-8.73 -40.89 L-6.17 -38.33 L-3.46 -35.78 L-0.64 -33.22 L2.22 -30.67 L5.08 -28.11 L7.87 -25.56 L10.54 -23.00 L13.04 -20.44 L15.31 -17.89 L17.31 -15.33 L18.99 -12.78 L20.32 -10.22 L21.28 -7.67 L21.84 -5.11 L21.99 -2.56 L21.73 0.00 L21.06 2.56 L20.00 5.11 L18.57 7.67 L16.79 10.22 L14.70 12.78 L12.36 15.33 L9.79 17.89 L7.05 20.44 L4.21 23.00 L1.31 25.56 L-1.58 28.11 L-4.42 30.67 L-7.14 33.22 L-9.68 35.78 L-12.01 38.33 L-14.08 40.89 L-15.85 43.44 L-17.29 46.00 L-18.38 48.56 L-19.09 51.11 L-19.43 53.67 L-19.39 56.22 L-18.98 58.78 L-18.22 61.33 L-17.13 63.89 L-15.74 66.44 L-14.09 69.00 L-12.22 71.56 L-10.18 74.11 L-8.02 76.67 L-5.80 79.22 L-3.57 81.78 L-1.40 84.33 L0.64 86.89 L2.47 89.44 L3.74 92.00" fill="none" stroke="url(#tealGlow)" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="12.19" y1="-76.67" x2="-12.19" y2="-76.67" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.80" stroke-linecap="round"/>
+<line x1="18.80" y1="-58.78" x2="-18.80" y2="-58.78" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.89" stroke-linecap="round"/>
+<line x1="8.73" y1="-40.89" x2="-8.73" y2="-40.89" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.70" stroke-linecap="round"/>
+<line x1="-10.54" y1="-23.00" x2="10.54" y2="-23.00" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.72" stroke-linecap="round"/>
+<line x1="-21.84" y1="-5.11" x2="21.84" y2="-5.11" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="-14.70" y1="12.78" x2="14.70" y2="12.78" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.79" stroke-linecap="round"/>
+<line x1="4.42" y1="30.67" x2="-4.42" y2="30.67" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.62" stroke-linecap="round"/>
+<line x1="18.38" y1="48.56" x2="-18.38" y2="48.56" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.87" stroke-linecap="round"/>
+<line x1="15.74" y1="66.44" x2="-15.74" y2="66.44" stroke="#19c6e6" stroke-width="2.2" stroke-opacity="0.85" stroke-linecap="round"/>
+    <circle cx="12.19" cy="-76.67" r="3.6" fill="#c5cdd4"/>
+<circle cx="-18.80" cy="-58.78" r="3.6" fill="#c5cdd4"/>
+<circle cx="8.73" cy="-40.89" r="3.6" fill="#c5cdd4"/>
+<circle cx="10.54" cy="-23.00" r="3.6" fill="#c5cdd4"/>
+<circle cx="-21.84" cy="-5.11" r="3.6" fill="#c5cdd4"/>
+<circle cx="14.70" cy="12.78" r="3.6" fill="#c5cdd4"/>
+<circle cx="4.42" cy="30.67" r="3.6" fill="#c5cdd4"/>
+<circle cx="-18.38" cy="48.56" r="3.6" fill="#c5cdd4"/>
+<circle cx="15.74" cy="66.44" r="3.6" fill="#c5cdd4"/>
+    
+    <g transform="translate(0, 38)" stroke="none">
+      <ellipse cx="0" cy="6.6" rx="5.0" ry="3.8" fill="#19c6e6" opacity=".95"/>
+      <circle cx="-4.4" cy="1.7" r="1.55" fill="#19c6e6"/>
+      <circle cx="-1.5" cy="0.2" r="1.55" fill="#19c6e6"/>
+      <circle cx="1.5" cy="0.2" r="1.55" fill="#19c6e6"/>
+      <circle cx="4.4" cy="1.7" r="1.55" fill="#19c6e6"/>
+    </g>
+    
+    </g>
+
+  <text x="450" y="488" text-anchor="middle" class="display" fill="#f7fafc" font-size="72" font-weight="700" letter-spacing="4.5">JOINT FORGE</text>
+  <text x="450" y="528" text-anchor="middle" class="brand" fill="#19c6e6" font-size="26" font-weight="600" letter-spacing="7">K9 GENETIX</text>
+
+  <g stroke="#c5cdd4" stroke-opacity=".5">
+    <line x1="248" y1="560" x2="404" y2="560" stroke-width="1.25"/>
+    <line x1="496" y1="560" x2="652" y2="560" stroke-width="1.25"/>
+  </g>
+  <circle cx="450" cy="560" r="3.4" fill="#19c6e6"/>
+
+  <text x="450" y="602" text-anchor="middle" class="brand" fill="#c5cdd4" font-size="18.5" font-weight="500" letter-spacing="5.8">MOBILITY  ·  SOFT CHEWS</text>
+  <text x="450" y="648" text-anchor="middle" class="display" fill="#eef2f5" font-size="25" font-weight="500">Protect the miles you love.</text>
+  <text x="450" y="680" text-anchor="middle" class="brand" fill="#9aa6b0" font-size="16" font-weight="450">Made with passion. Built for the bond.</text>
+
+  <rect x="292" y="706" width="316" height="50" rx="25" fill="#0a0e12" stroke="#c5cdd4" stroke-opacity=".5" stroke-width="1.5"/>
+  <text x="450" y="738" text-anchor="middle" class="brand" fill="#f7fafc" font-size="19.5" font-weight="650" letter-spacing="3.8">60 SOFT CHEWS</text>
+
+  <text x="450" y="786" text-anchor="middle" class="brand" fill="#19c6e6" font-size="14" font-weight="600" letter-spacing="3.2">KEY ACTIVES</text>
+  <text x="450" y="812" text-anchor="middle" class="brand" fill="#c5cdd4" font-size="17" font-weight="450" letter-spacing=".6">Glucosamine  ·  Chondroitin  ·  MSM  ·  Omega</text>
+
+  <g transform="translate(198, 836)">
+    <rect x="0" y="0" width="504" height="188" rx="16" fill="#080a0d" stroke="#c5cdd4" stroke-opacity=".4" stroke-width="1.35"/>
+    <path d="M0 0h504v36H0z" fill="#11171c"/>
+    <text x="252" y="24" text-anchor="middle" class="brand" fill="#e8eef2" font-size="13" font-weight="650" letter-spacing="2.4">SUPPORT PROFILE  ·  PER SOFT CHEW</text>
+    <g class="brand" font-size="14.5" fill="#c5cdd4">
+      
+      <text x="28" y="66" font-weight="500">Glucosamine HCl</text>
+      <text x="476" y="66" text-anchor="end" fill="#7f8b95" font-size="12.5" letter-spacing="1">DRAFT</text>
+      <line x1="28" y1="76" x2="476" y2="76" stroke="#c5cdd4" stroke-opacity=".16" stroke-width="1"/>
+
+      <text x="28" y="100" font-weight="500">Chondroitin Sulfate</text>
+      <text x="476" y="100" text-anchor="end" fill="#7f8b95" font-size="12.5" letter-spacing="1">DRAFT</text>
+      <line x1="28" y1="110" x2="476" y2="110" stroke="#c5cdd4" stroke-opacity=".16" stroke-width="1"/>
+
+      <text x="28" y="134" font-weight="500">MSM (Methylsulfonylmethane)</text>
+      <text x="476" y="134" text-anchor="end" fill="#7f8b95" font-size="12.5" letter-spacing="1">DRAFT</text>
+      <line x1="28" y1="144" x2="476" y2="144" stroke="#c5cdd4" stroke-opacity=".16" stroke-width="1"/>
+
+      <text x="28" y="168" font-weight="500">Omega support (fish oil)</text>
+      <text x="476" y="168" text-anchor="end" fill="#7f8b95" font-size="12.5" letter-spacing="1">DRAFT</text>
+      <line x1="28" y1="178" x2="476" y2="178" stroke="#c5cdd4" stroke-opacity=".16" stroke-width="1"/>
+    </g>
+  </g>
+
+  <text x="450" y="1112" text-anchor="middle" class="brand" fill="#8a959e" font-size="13" font-weight="450">For dogs. Daily wellness support — ask your veterinarian.</text>
+  <text x="450" y="1138" text-anchor="middle" class="brand" fill="#6a757f" font-size="12" font-weight="450">Not intended to diagnose, treat, cure, or prevent disease.</text>
+
+  <g transform="translate(450, 1172)">
+    <rect x="-98" y="-17" width="196" height="34" rx="8" fill="#050608" stroke="#19c6e6" stroke-opacity=".7" stroke-width="1.35"/>
+    <text x="0" y="5" text-anchor="middle" class="brand" fill="#19c6e6" font-size="12.5" font-weight="650" letter-spacing="3.4">DRAFT PLACEHOLDER</text>
+  </g>
+</svg>
