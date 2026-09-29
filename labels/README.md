@@ -13,11 +13,11 @@
 >
 > The `*-collar-charm-*` files below are the **superseded teal** first design, kept for history only.
 
-**Locked concept (first design Michael liked):** dog-tag silver rim + **circular teal DNA helix** + small paw.
+**Superseded concept (first design):** dog-tag silver rim + **circular teal DNA helix** + small paw.
 
 - **NOT** bone-shaped helix
 - **NOT** bone badge / bone plate
-- Distinct from Modern Genetix human labels (no silver-ribbon helix wordmark)
+- No silver-ribbon helix wordmark
 
 ## Files
 
