@@ -5,12 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>K9 Genetix — Premium Wellness for Working, Hunting &amp; Family Dogs</title>
 <meta name="description" content="Premium canine wellness from Modern Genetix — formulas made with love to protect mobility, coat, and calm focus for the dogs who share our passion for life."/>
-<link rel="icon" href="logo-mark.svg" type="image/svg+xml"/>
+<link rel="icon" href="brand/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png"/>
+<meta name="theme-color" content="#050608"/>
+<meta property="og:image" content="https://k9genetix.com/brand/og-k9-blue-emblem.png"/>
 <style>
 :root{
-  --bg:#050608;--bg2:#0b0d10;--bg3:#12151a;--bg4:#161a20;
-  --teal:#19c6e6;--teal-dim:rgba(25,198,230,.14);--teal-glow:rgba(25,198,230,.22);
-  --silver:#c5cdd4;--muted:#8b949e;--white:#f4f7f9;
+  /* K9 Genetix palette — sampled from the locked emblem (2026-09-29) */
+  --bg:#050608;--bg2:#060a14;--bg3:#0a1122;--bg4:#0d1529;
+  --navy:#010c27;--navy-mid:#0c347e;
+  --royal:#2b60b3;--royal-hi:#4174c7;--royal-bright:#527dcf;--royal-text:#6f97ea;--royal-soft:#7ea2ec;
+  --royal-dim:rgba(65,116,199,.16);--royal-glow:rgba(47,95,208,.24);
+  --silver:#c5cdd4;--chrome:#e1e5ec;--muted:#8b949e;--white:#f4f7f9;
   --line:rgba(197,205,212,.12);--line-strong:rgba(197,205,212,.22);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -20,11 +28,13 @@ body{
   background:var(--bg);color:var(--silver);line-height:1.55;-webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none}
+::selection{background:rgba(65,116,199,.45);color:#fff}
+:focus-visible{outline:2px solid var(--royal-bright);outline-offset:3px;border-radius:6px}
 img{max-width:100%;display:block}
 .wrap{width:min(1120px,92vw);margin:0 auto}
 .eyebrow{
   display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--teal);font-weight:600;margin-bottom:14px;
+  color:var(--royal-text);font-weight:600;margin-bottom:14px;
 }
 h1,h2,h3{color:var(--white);font-weight:600;letter-spacing:-.02em}
 h1{font-size:clamp(1.85rem,4.2vw,3.1rem);line-height:1.08;max-width:18ch}
@@ -37,10 +47,13 @@ p{color:var(--silver);max-width:58ch}
   border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease;
 }
 .btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--teal);color:#031018}
-.btn-primary:hover{background:#3ad4ef}
+.btn-primary{
+  background:linear-gradient(180deg,var(--royal-hi) 0%,var(--royal) 100%);color:#fff;
+  border-color:rgba(126,162,236,.45);box-shadow:0 8px 24px rgba(43,96,179,.28),inset 0 1px 0 rgba(255,255,255,.18);
+}
+.btn-primary:hover{background:linear-gradient(180deg,#4a7bcc 0%,#2f66bb 100%);box-shadow:0 10px 30px rgba(47,95,208,.4),inset 0 1px 0 rgba(255,255,255,.22)}
 .btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--white)}
-.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+.btn-ghost:hover{border-color:var(--royal-bright);color:var(--royal-soft);background:rgba(65,116,199,.08)}
 .btn-sm{padding:10px 16px;font-size:13px}
 
 /* NAV */
@@ -51,11 +64,11 @@ p{color:var(--silver);max-width:58ch}
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:16px}
 .brand{display:flex;align-items:center;gap:10px}
-.brand img{width:34px;height:34px;border-radius:8px}
+.brand img{width:38px;height:38px;border-radius:50%;box-shadow:0 0 0 1px rgba(126,162,236,.18),0 4px 14px rgba(47,95,208,.28)}
 .logo{
   font-weight:700;letter-spacing:.1em;font-size:13px;color:var(--white);text-transform:uppercase;
 }
-.logo span{color:var(--teal)}
+.logo span{color:var(--royal-text)}
 .nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
 .nav-links a:hover{color:var(--white)}
 .nav-toggle{
@@ -67,8 +80,8 @@ p{color:var(--silver);max-width:58ch}
 .hero{
   padding:72px 0 64px;
   background:
-    radial-gradient(850px 400px at 88% 8%,rgba(25,198,230,.13),transparent 58%),
-    radial-gradient(600px 320px at 8% 90%,rgba(25,198,230,.05),transparent 55%),
+    radial-gradient(850px 400px at 88% 8%,rgba(47,95,208,.16),transparent 58%),
+    radial-gradient(600px 320px at 8% 90%,rgba(1,12,39,.9),transparent 55%),
     var(--bg);
 }
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
@@ -84,7 +97,7 @@ p{color:var(--silver);max-width:58ch}
   border-radius:999px;padding:6px 12px;letter-spacing:.04em;
 }
 .hero-visual{
-  position:relative;background:linear-gradient(165deg,#10141a 0%,#090b0e 100%);
+  position:relative;background:linear-gradient(165deg,#0b1224 0%,#05070d 100%);
   border:1px solid var(--line);border-radius:24px;padding:0;
   box-shadow:0 36px 90px rgba(0,0,0,.5);overflow:hidden;min-height:360px;
 }
@@ -98,7 +111,7 @@ p{color:var(--silver);max-width:58ch}
 }
 .hero-caption h3{font-size:1.2rem;margin:0 0 4px}
 .hero-caption .lede{margin:0;font-size:13px;color:var(--muted);max-width:none}
-.hero-caption .tagline{display:inline-block;margin-top:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600}
+.hero-caption .tagline{display:inline-block;margin-top:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--royal-text);font-weight:600}
 
 /* SECTIONS */
 section{padding:76px 0;border-top:1px solid var(--line)}
@@ -113,12 +126,12 @@ section{padding:76px 0;border-top:1px solid var(--line)}
   display:flex;flex-direction:column;min-height:100%;
   transition:border-color .2s ease,transform .2s ease;
 }
-.product:hover{border-color:rgba(25,198,230,.4);transform:translateY(-3px)}
+.product:hover{border-color:rgba(82,125,207,.5);transform:translateY(-3px);box-shadow:0 18px 44px rgba(0,0,0,.45),0 0 0 1px rgba(65,116,199,.12)}
 .product-visual{
   position:relative;margin:-6px -6px 18px;border-radius:16px;overflow:hidden;
   background:
-    radial-gradient(120% 90% at 50% 18%,rgba(25,198,230,.10),transparent 55%),
-    linear-gradient(165deg,#10151a 0%,#07090c 100%);
+    radial-gradient(120% 90% at 50% 18%,rgba(47,95,208,.16),transparent 55%),
+    linear-gradient(165deg,#0b1326 0%,#05070c 100%);
   border:1px solid var(--line);aspect-ratio:4/5;
   display:flex;align-items:center;justify-content:center;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
@@ -128,16 +141,16 @@ section{padding:76px 0;border-top:1px solid var(--line)}
   filter:drop-shadow(0 18px 28px rgba(0,0,0,.55));
   transition:transform .25s ease;
 }
-.product:hover .product-visual{border-color:rgba(25,198,230,.35)}
+.product:hover .product-visual{border-color:rgba(82,125,207,.42)}
 .product:hover .product-visual img{transform:translateY(-3px) scale(1.02)}
 .product-visual .mock-badge{
   position:absolute;left:12px;top:12px;z-index:2;
   font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
-  color:var(--teal);background:rgba(5,6,8,.72);border:1px solid rgba(25,198,230,.35);
+  color:var(--royal-soft);background:rgba(5,6,8,.72);border:1px solid rgba(82,125,207,.42);
   border-radius:999px;padding:5px 9px;backdrop-filter:blur(8px);
 }
 .product .tag{
-  font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--royal-text);
   font-weight:600;margin-bottom:8px;
 }
 .product p{font-size:14px;color:var(--muted);max-width:none;flex:1}
@@ -158,13 +171,14 @@ section{padding:76px 0;border-top:1px solid var(--line)}
 .point-num{
   flex-shrink:0;width:28px;height:28px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  background:var(--teal-dim);color:var(--teal);font-size:12px;font-weight:700;
+  background:var(--royal-dim);color:var(--royal-soft);font-size:12px;font-weight:700;
+  border:1px solid rgba(82,125,207,.3);
 }
 .point h3{font-size:.98rem;margin-bottom:4px}
 .point p{font-size:13.5px;color:var(--muted);max-width:none}
 .science-panel{
-  background:linear-gradient(160deg,#0e1418,#090b0e);
-  border:1px solid rgba(25,198,230,.28);border-radius:22px;padding:28px;
+  background:radial-gradient(90% 70% at 100% 0%,rgba(47,95,208,.14),transparent 60%),linear-gradient(160deg,#0a1328,#060810);
+  border:1px solid rgba(82,125,207,.34);border-radius:22px;padding:28px;
 }
 .science-panel .eyebrow{margin-bottom:10px}
 .science-panel h3{font-size:1.25rem;margin-bottom:12px}
@@ -188,7 +202,7 @@ section{padding:76px 0;border-top:1px solid var(--line)}
 .parallel-card{
   background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px;
 }
-.parallel-card .who{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:8px}
+.parallel-card .who{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--royal-text);font-weight:600;margin-bottom:8px}
 .parallel-card p{font-size:13.5px;color:var(--muted);max-width:none}
 .founder{
   display:flex;gap:16px;align-items:center;margin-top:24px;padding:18px;
@@ -196,8 +210,8 @@ section{padding:76px 0;border-top:1px solid var(--line)}
 }
 .avatar{
   width:56px;height:56px;border-radius:50%;flex-shrink:0;
-  background:radial-gradient(circle at 30% 30%,var(--teal),#0a3a45 55%,#111);
-  border:2px solid rgba(25,198,230,.4);
+  background:radial-gradient(circle at 30% 30%,var(--royal-bright),var(--navy-mid) 50%,var(--navy) 80%);
+  border:2px solid rgba(197,205,212,.45);
 }
 .founder strong{display:block;color:var(--white);font-size:14px}
 .founder span{font-size:12px;color:var(--muted)}
@@ -205,7 +219,7 @@ section{padding:76px 0;border-top:1px solid var(--line)}
 /* CONTACT */
 .contact-box{
   display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
-  background:linear-gradient(135deg,#0e1418,#0a0c10);
+  background:radial-gradient(70% 90% at 0% 0%,rgba(47,95,208,.12),transparent 60%),linear-gradient(135deg,#0a1328,#06080e);
   border:1px solid var(--line);border-radius:22px;padding:32px;
 }
 .contact-box p{margin-top:10px}
@@ -222,11 +236,12 @@ section{padding:76px 0;border-top:1px solid var(--line)}
 footer{padding:40px 0 56px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
 .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:flex-start}
 .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.footer-brand img{width:28px;height:28px;border-radius:7px}
+.footer-brand img{width:32px;height:32px;border-radius:50%}
 .footer-brand .logo{font-size:12px}
 footer p{max-width:52ch;margin-bottom:8px}
 .domains{color:var(--silver)}
-.domains a:hover{color:var(--teal)}
+.domains a{color:var(--silver);border-bottom:1px solid rgba(126,162,236,.35)}
+.domains a:hover{color:var(--royal-soft);border-color:var(--royal-soft)}
 
 @media(max-width:900px){
   .nav-links{display:none}
@@ -254,7 +269,7 @@ footer p{max-width:52ch;margin-bottom:8px}
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="K9 Genetix home">
-      <img src="logo-mark.svg" alt=""/>
+      <img src="brand/logo-k9-blue-180.png" srcset="brand/logo-k9-blue-180.png 1x, brand/logo-k9-blue-512.png 3x" width="38" height="38" alt=""/>
       <span class="logo">K9 <span>GENETIX</span></span>
     </a>
     <nav class="nav-links" id="navLinks">
@@ -310,7 +325,7 @@ footer p{max-width:52ch;margin-bottom:8px}
         <article class="product">
           <div class="product-visual">
             <span class="mock-badge">Collar Charm</span>
-            <img src="labels/joint-forge-collar-charm-front-solid.png" alt="Joint Forge Collar Charm label mock — silver dog-tag rim, circular teal helix and paw"/>
+            <img src="labels/joint-forge-k9-blue-front.png" alt="Joint Forge Collar Charm label mock — silver dog-tag rim, royal-blue heart-helix emblem with silver paw"/>
           </div>
           <div class="tag">Mobility</div>
           <h3>Joint Forge</h3>
@@ -323,7 +338,7 @@ footer p{max-width:52ch;margin-bottom:8px}
         <article class="product">
           <div class="product-visual">
             <span class="mock-badge">Collar Charm</span>
-            <img src="labels/vital-coat-collar-charm-front-solid.png" alt="Vital Coat Collar Charm label mock — silver dog-tag rim, circular teal helix and paw"/>
+            <img src="labels/vital-coat-k9-blue-front.png" alt="Vital Coat Collar Charm label mock — silver dog-tag rim, royal-blue heart-helix emblem with silver paw"/>
           </div>
           <div class="tag">Skin &amp; coat</div>
           <h3>Vital Coat</h3>
@@ -336,7 +351,7 @@ footer p{max-width:52ch;margin-bottom:8px}
         <article class="product">
           <div class="product-visual">
             <span class="mock-badge">Collar Charm</span>
-            <img src="labels/calm-focus-collar-charm-front-solid.png" alt="Calm Focus Collar Charm label mock — silver dog-tag rim, circular teal helix and paw"/>
+            <img src="labels/calm-focus-k9-blue-front.png" alt="Calm Focus Collar Charm label mock — silver dog-tag rim, royal-blue heart-helix emblem with silver paw"/>
           </div>
           <div class="tag">Calm &amp; focus</div>
           <h3>Calm Focus</h3>
@@ -469,7 +484,7 @@ footer p{max-width:52ch;margin-bottom:8px}
   <div class="wrap footer-inner">
     <div>
       <div class="footer-brand">
-        <img src="logo-mark.svg" alt=""/>
+        <img src="brand/logo-k9-blue-180.png" srcset="brand/logo-k9-blue-180.png 1x, brand/logo-k9-blue-512.png 3x" width="32" height="32" alt=""/>
         <span class="logo">K9 <span>GENETIX</span></span>
       </div>
       <p class="domains"><a href="https://k9genetix.com">k9genetix.com</a> · <a href="https://caninegenetix.com">caninegenetix.com</a> redirects here</p>
